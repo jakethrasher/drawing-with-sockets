@@ -5,7 +5,7 @@ let socket;
 socket = io.connect('https://damp-spire-04585.herokuapp.com');
 
 function setup(){
-    const cv =createCanvas(800,600)
+    const cv =createCanvas(displayWidth,displayHeight)
     // cv.position(600, 100)
     cv.background(0)
     cv.parent('canvas-container')

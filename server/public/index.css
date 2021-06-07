@@ -51,6 +51,16 @@ input.call-picker {
   }
   .main-container{
       display: flex;
-      
+      flex-direction: column;
+      align-items: center;
   }
+ .controls{
+     display: flex;
+ }
+ .left-side{
+     margin:8px;
+ }
+ .right-side{
+     margin:8px;
+ }
   

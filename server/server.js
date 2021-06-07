@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
-app.set('port', 8001);
+app.set('port', '8001');
 const http = require('http');
 const server = http.createServer(app);
 const cors = require('cors');
 
 const io = require('socket.io')(server, {
     cors: {
-        origin:['http://localhost:8001']
+        origin:['https://git.heroku.com/damp-spire-04585.git']
     }
 })
 
@@ -25,4 +25,4 @@ io.sockets.on('connection', (socket) => {
     })
     socket.on('disconnect', () => console.log('Client has disconnected'))
    })
-server.listen(8001)
+server.listen('8001')

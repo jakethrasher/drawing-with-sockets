@@ -1,7 +1,8 @@
 let color = '#FFF'
 let strokeWidth = 4
 let socket;
-socket = io.connect('http://localhost:8001');
+
+socket = io.connect('https://git.heroku.com/damp-spire-04585.git');
 
 function setup(){
     const cv =createCanvas(800,600)

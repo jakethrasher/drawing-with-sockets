@@ -25,4 +25,4 @@ io.sockets.on('connection', (socket) => {
     })
     socket.on('disconnect', () => console.log('Client has disconnected'))
    })
-server.listen('8001')
+server.listen(process.env.PORT || 8001)
